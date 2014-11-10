@@ -10,7 +10,7 @@ Depends on several things in order to build on OSX
 
 Several binaries need to be in the path, including winegcc, winebuild
 
-2 - have to download steinbergs asio.h file
+2 - have to download steinbergs asio.h file: https://aur.archlinux.org/packages/steinberg-asio/
 
 3 - Use Makefile.osx to build wineasio:
 
