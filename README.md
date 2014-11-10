@@ -1,4 +1,4 @@
-Depends on several things in order to build
+Depends on several things in order to build on OSX
 
 1 - Must have wine installed.  There are several dev oriented binaries, libs
     and includes that are required for building wineasio.  By default this
@@ -27,11 +27,6 @@ TODO
   into the wineasio mainline.  
    
     - Detect MacOS and include the patched changes to asio.c with ifdefs
-    - detect MacOS and include the -DASIOST32INT macro in the Makefiles
-    - have the makefile refer to locations where wine is installed normally
-      rather then using the build location as I have done for my system, or
-      have a way to configure it either way easily, but the default should
-      probably be the wine installed way.
 
 OSXWINEBUILDER
 --------------
