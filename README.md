@@ -6,10 +6,9 @@ Depends on several things in order to build on OSX
 
     /usr/local/include/wine
     /usr/local/include/wine/windows
-
     /usr/local/lib/wine
 
-    Several binaries need to be in the path, including winegcc, winebuild
+Several binaries need to be in the path, including winegcc, winebuild
 
 2 - have to download steinbergs asio.h file
 
