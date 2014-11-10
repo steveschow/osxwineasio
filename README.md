@@ -43,7 +43,7 @@ Specifically, if osxwinebuilder is installed for example in the following:
 Then create several symlinks:
 
     ln -s ~/wine/wine-1.7.30/include/wine /usr/local/include/wine
-    ln -s ~/wine/wine-1.7.30/lib /usr/local/lib/wine
+    ln -s ~/wine/wine-1.7.30/lib/wine /usr/local/lib/wine
 
 With the above links and binaries in the path, the Makefile should work the same as if using normal homebrew install of Wine, o other wine installs that place includes and libs under /usr/local
 
