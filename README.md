@@ -22,6 +22,8 @@ TODO
 
 - Try out 64bit version
 
+- Try to see if we can make it work using the default float sample data.  Currently have found that produces no audio with JackOSX and had to use ASIOST32INT def in order to get it working.  See main README for explanation.
+
 - Need to make this more generic so that it can potentially be merged back
   into the wineasio mainline which is found here: https://sourceforge.net/projects/wineasio/?source=directory
    
