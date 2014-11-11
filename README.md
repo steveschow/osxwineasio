@@ -1,4 +1,14 @@
-Depends on several things in order to build on OSX
+OsxWineAsio
+-----------
+This repo is a fork from the mainline wineasio, with the intention to make it build and operate on OSX.  The mainline of wineasio can be found here:
+
+  https://sourceforge.net/projects/wineasio/?source=directory
+
+Hopefully these changes can be merged back into the official mainline wineasio repo at sourceforge, then this repo will go away.  For now I will try to keep it up to date if and when wineasio changes for any reason, but at least this is now up to date with version 1.9.2 of wineasio and I can confirm it builds and operates successfully on OSX.
+
+Build Dependencies
+------------------
+Depends on several things in order to build on OSX:
 
 1 - Must have wine installed.  There are several dev oriented binaries, libs
     and includes that are required for building wineasio.  By default this
@@ -8,27 +18,21 @@ Depends on several things in order to build on OSX
     /usr/local/include/wine/windows
     /usr/local/lib/wine
 
-Several binaries need to be in the path, including winegcc, winebuild
+2 - Several binaries need to be in the $PATH, including winegcc, winebuild
 
-2 - have to download steinbergs asio.h file: https://aur.archlinux.org/packages/steinberg-asio/
+3 - You must download steinbergs sdk and copy asio.h into the wineasio dir: https://aur.archlinux.org/packages/steinberg-asio/
 
-3 - Use Makefile.osx to build wineasio:
+4 - Use Makefile.osx to build wineasio on OSX:
 
     make -f Makefile.osx
 
-
 TODO
 ----
-
 - Try out 64bit version
 
 - Try to see if we can make it work using the default float sample data.  Currently have found that produces no audio with JackOSX and had to use ASIOST32INT def in order to get it working.  See main README for explanation.
 
-- Need to make this more generic so that it can potentially be merged back
-  into the wineasio mainline which is found here: https://sourceforge.net/projects/wineasio/?source=directory
-   
-    - Detect MacOS and include the patched changes to asio.c with ifdefs
-
+- Need to make this more generic so that it can potentially be merged back into the wineasio mainline.  This may include some ifdefs around the patches to asio.c and/or ifdefs inside a single Makefile rather then providing seperate OSX makefile.
 
 OSXWINEBUILDER
 --------------
