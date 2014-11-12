@@ -26,9 +26,6 @@ Depends on several things in order to build on OSX:
 
 3 - You must download steinbergs sdk and copy asio.h into the wineasio dir: https://aur.archlinux.org/packages/steinberg-asio/
 
-4 - Use Makefile.osx to build wineasio on OSX:
-
-    make -f Makefile.osx
 
 TODO
 ----
@@ -36,7 +33,7 @@ TODO
 
 - Try to see if we can make it work using the default float sample data.  Currently have found that produces no audio with JackOSX and had to use ASIOST32INT def in order to get it working.  See main README for explanation.
 
-- Need to make this more generic so that it can potentially be merged back into the wineasio mainline.  This may include some ifdefs around the patches to asio.c and/or ifdefs inside a single Makefile rather then providing seperate OSX makefile.
+- see if the change to asio.c is generic enough to be used for all platforms or do ifdefs need to be used for isolating this patch only OSX?
 
 OSXWINEBUILDER
 --------------
