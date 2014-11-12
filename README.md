@@ -4,7 +4,7 @@ This repo is a fork from the mainline wineasio, with the intention to make it bu
 
   https://sourceforge.net/projects/wineasio/?source=directory
 
-Hopefully these changes can be merged back into the official mainline wineasio repo at sourceforge, then this repo will go away.  For now I will try to keep it up to date if and when wineasio changes for any reason, but at least this is now up to date with version 1.9.2 of wineasio and I can confirm it builds and operates successfully on OSX.
+Hopefully these changes can be merged back into the official mainline wineasio repo at sourceforge, then this repo will go away.  For now I will try to keep it up to date if and when wineasio changes for any reason, but at least this is now up to date with version 0.9.2 of wineasio and I can confirm it builds and operates successfully on OSX.
 
 Prebuilt binary
 ---------------
