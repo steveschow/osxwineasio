@@ -35,11 +35,24 @@ TODO
 
 - see if the change to asio.c is generic enough to be used for all platforms or do ifdefs need to be used for isolating this patch only OSX?
 
+WineApp
+-------
+The Author of WineBottler maintains an easy to use pre-built version of wine, which includes all of the libs and includes needed to build wineasio.  This is the easiest way I know to get wine working on osx.  Just download his Wine.app, its all there.
+
+In order to compile wineasio using this version of wine, you'll need to create some symlinks:
+
+    ln -s /Applications/Wine.app/Contents/Resources/include/wine /usr/local/include/wine
+    ln -s /Applications/Wine.app/Contents/Resources/lib/wine /usr/local/lib/wine
+
+And make sure wine is in the PATH:
+
+     PATH=$PATH:/Applications/Wine.app/Contents/Resources/bin
+     
 OSXWINEBUILDER
 --------------
 https://code.google.com/p/osxwinebuilder/
 
-osxwinewbuilder is a very nice way to build and install wine on a system, it
+If you wish to build all the wine sources from scratch, osxwinewbuilder is a very nice way to build and install wine on a system, it
 keeps all wine related files isolated from /usr/local.  However if you use
 this version of wine, you will need to make sure the wine binaries are in the
 PATH and create some sym links under /usr/local that point to some includes
