@@ -69,5 +69,9 @@ Then create several symlinks:
     ln -s ~/wine/wine-1.7.30/include/wine /usr/local/include/wine
     ln -s ~/wine/wine-1.7.30/lib/wine /usr/local/lib/wine
 
+And
+
+     export PATH=$PATH:~/wine/wine-1.7.30/bin
+     
 With the above links and the noted binaries located in the PATH, the Makefile should work the same as if using normal homebrew install of Wine, or other wine installs that place includes and libs under /usr/local
 
